@@ -2,8 +2,10 @@
   "compileOnSave": true,
   "compilerOptions": {
     "target": "ES6",
-    "module": "Node16",
+    "module": "es2020",
     "sourceMap": true,
+    "moduleResolution": "node",
+    "strict": true
   },
   "include": [
     "src/**/*"
