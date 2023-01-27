@@ -24,7 +24,9 @@
     "tcol": "^1.0.2"
   },
   "scripts": {
-    "build": "tsc --build --verbose"
+    "build": "tsc --build --verbose",
+    "rollup": "rollup -c",
+    "package": "npm run build && npm run rollup"
   },
   "repository": {
     "type": "git",
