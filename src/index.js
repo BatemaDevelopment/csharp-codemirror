@@ -12,10 +12,13 @@ let startState = EditorState.create({
 });
 let view = new EditorView({
     state: startState,
-    parent: document.querySelector("#editor"),
+    parent: document.getElementById("editor"),
     extensions: [
         basicSetup,
         StreamLanguage.define(csharp)
     ]
 });
+let transaction = view.state.update({ changes: { from: 0, insert: "0" } });
+console.log(transaction.state.doc.toString());
+view.dispatch(transaction);
 //# sourceMappingURL=index.js.map
