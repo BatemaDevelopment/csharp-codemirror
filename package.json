@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.4.0",
+    "@codemirror/commands": "^6.2.0",
+    "@codemirror/language": "^6.4.0",
+    "@codemirror/legacy-modes": "^6.3.1",
+    "@codemirror/lint": "^6.1.0",
+    "@codemirror/search": "^6.2.3",
+    "@codemirror/state": "^6.2.0",
+    "@codemirror/view": "^6.7.3",
+    "codemirror": "^6.0.1",
+    "patch-package": "^6.5.1"
+  },
+  "name": "csharp-codemirror",
+  "description": "For school, nothing to see here- move on...",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@codemirror/buildhelper": "^0.1.16",
+    "tcol": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lukas-Batema/csharp-codemirror.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lukas-Batema/csharp-codemirror/issues"
+  },
+  "homepage": "https://github.com/Lukas-Batema/csharp-codemirror#readme"
+}
