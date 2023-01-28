@@ -2,16 +2,18 @@
   "compileOnSave": true,
   "compilerOptions": {
     "target": "ES6",
-    "module": "es2020",
+    "module": "ES6",
     "sourceMap": true,
     "moduleResolution": "node",
     "strict": true,
     "outDir": "dist",
     "rootDir": "src",
+    "declaration": true,
+    "declarationDir": "dist/dts",
   },
   "buildOptions": {
     "outDir": "dist",
     "rootDir": "src",
     "verbose": true
-  }
+  },
 }

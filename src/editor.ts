@@ -4,17 +4,19 @@ import { keymap } from "@codemirror/view";
 import { defaultKeymap } from "@codemirror/commands";
 import { StreamLanguage } from "@codemirror/language";
 import { csharp } from "@codemirror/legacy-modes/mode/clike";
+import { oneDarkTheme } from "@codemirror/theme-one-dark";
 
 let startState = EditorState.create({
-  doc: "Console.WriteLine(\"Hello, World!\");",
+  doc: "using System;\nConsole.WriteLine(\"Hello, World!\");",
   extensions: [
     keymap.of(defaultKeymap),
     basicSetup,
-    StreamLanguage.define(csharp)
+    StreamLanguage.define(csharp),
+    oneDarkTheme
   ],
 });
 
 let view = new EditorView({
   state: startState,
-  parent: document.querySelector("#editor")!,
+  parent: document.querySelector("#editor")!
 });
