@@ -21,13 +21,18 @@
   "private": true,
   "type": "module",
   "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
     "@codemirror/buildhelper": "^0.1.16",
+    "babel-preset-minify": "^0.5.2",
     "tcol": "^1.0.2"
   },
   "scripts": {
     "build": "tsc --build --verbose",
     "rollup": "rollup -c",
-    "package": "npm run build && npm run rollup"
+    "minify": "babel ./src/bundles/editor.bundle.js --config-file ./babel.config.cjs -o ./src/bundles/editor.bundle.min.js",
+    "package": "npm run build && npm run rollup && npm run minify",
+    "dev": "npm run build && npm run rollup"
   },
   "repository": {
     "type": "git",
