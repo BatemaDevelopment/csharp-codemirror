@@ -1,0 +1,48 @@
+{
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.4.0",
+    "@codemirror/commands": "^6.2.0",
+    "@codemirror/language": "^6.4.0",
+    "@codemirror/legacy-modes": "^6.3.1",
+    "@codemirror/lint": "^6.1.0",
+    "@codemirror/search": "^6.2.3",
+    "@codemirror/state": "^6.2.0",
+    "@codemirror/theme-one-dark": "^6.1.0",
+    "@codemirror/view": "^6.7.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "codemirror": "^6.0.1",
+    "patch-package": "^6.5.1",
+    "rollup": "^2.79.1"
+  },
+  "name": "csharp-codemirror",
+  "description": "For school, nothing to see here- move on...",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@codemirror/buildhelper": "^0.1.16",
+    "babel-preset-minify": "^0.5.2",
+    "tcol": "^1.0.2"
+  },
+  "scripts": {
+    "build": "tsc --build --verbose",
+    "rollup": "rollup -c",
+    "minify": "babel ./src/bundles/editor.bundle.js --config-file ./babel.config.cjs -o ./src/bundles/editor.bundle.min.js",
+    "package": "npm run build && npm run rollup && npm run minify",
+    "dev": "npm run build && npm run rollup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lukas-Batema/csharp-codemirror.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lukas-Batema/csharp-codemirror/issues"
+  },
+  "homepage": "https://github.com/Lukas-Batema/csharp-codemirror#readme"
+}
