@@ -1,9 +1,9 @@
-import { nodeResolve } from "@rollup/plugin-node-resolve"
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 export default {
-  input: "dist/editor.js",
+  input: "src/bundles/full.bundle.js",
   output: {
-    file: "src/bundles/editor.bundle.js",
+    file: "src/bundles/full.rollup.bundle.js",
     format: "iife"
   },
   plugins: [nodeResolve()]
-}
+};

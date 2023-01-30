@@ -16,7 +16,7 @@ let startState = EditorState.create({
   ],
 });
 
-let view = new EditorView({
+new EditorView({
   state: startState,
   parent: document.querySelector("#editor")!
 });
