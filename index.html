@@ -9,11 +9,13 @@
   </head>
 
   <body style="background-color: #212122;">
-    <script src="src/bundles/full.rollup.bundle.js"></script>
+    <script type="module" src="src/bundles/full.rollup.bundle.js"></script>
 
     <main>
-      <div id="editor"></div>
-      <div id="console"></div>
+      <div id="editor"><button id="run" onclick="run">Run</button></div>
+      <iframe title="output" id="output"></iframe>
+      <br />
+      
     </main>
 
     <footer style="text-align: center; color: #FFF; padding-top: 10px;">

@@ -1,31 +1,14 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "lib": [
-      "ES6",
-      "DOM",
-      "ScriptHost"
-    ],
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "types": [
-      "mocha"
-    ],
-    "stripInternal": true,
-    "noUnusedLocals": true,
-    "newLine": "lf",
     "target": "ES6",
     "module": "ES2020",
     "sourceMap": true,
     "moduleResolution": "node",
-    "strict": true,
     "outDir": "dist",
     "rootDir": "src",
     "declaration": true,
     "declarationDir": "dist/dts",
-    "moduleDetection": "force",
-    "esModuleInterop": true,
   },
   "buildOptions": {
     "outDir": "dist",

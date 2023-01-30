@@ -11,13 +11,11 @@
     "@codemirror/view": "^6.7.3",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "codemirror": "^6.0.1",
-    "codemirror-console": "^3.0.4",
     "rollup": "^2.79.1"
   },
   "name": "csharp-codemirror",
   "description": "For school, nothing to see here- move on...",
   "version": "1.0.0",
-  "main": "index.js",
   "private": true,
   "devDependencies": {
     "@babel/cli": "^7.20.7",
