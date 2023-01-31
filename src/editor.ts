@@ -40,8 +40,8 @@ const helpKeymap = [{
 
 let console: Extension = {
   extension: [
-    EditorView.updateListener.of(update => {
-      document.getElementById("output")!.textContent = update.state.doc.toString();
+    EditorView.updateListener.of(output => {
+      document.getElementById("output").setAttribute("srcdoc", (output.state.doc.eq(startState.doc) ? output.state.doc.toString() : "No code to run"));
     })
   ]
 };
@@ -51,14 +51,14 @@ let startState = EditorState.create({
   extensions: [
     keymap.of(defaultKeymap),
     basicSetup,
+    console,
     StreamLanguage.define(csharp),
     oneDarkTheme,
     helpPanel(),
-    console
   ]
 });
 
-;(window as any).view = new EditorView({
+let view = new EditorView({
   state: startState,
   parent: document.querySelector("#editor")!,
 });
