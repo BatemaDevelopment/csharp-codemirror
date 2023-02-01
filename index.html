@@ -2,18 +2,17 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     <meta name="description" content="CodeMirror - C#" />
     <meta name="keywords" content="CodeMirror, C#" />
+    <script type="module" src="src/bundles/full.rollup.bundle.js"></script>
     <title>CodeMirror - C#</title>
   </head>
 
   <body style="background-color: #212122;">
-    <script type="module" src="src/bundles/full.rollup.bundle.js"></script>
-
     <main>
-      <div id="editor"></div>
-      <iframe title="output" id="output"></iframe>
+      <div style="border: solid 3px #020200; margin-bottom: 5px; border-radius: 5px;" id="editor"></div>
+      <iframe style="border: solid 3px #020200; border-radius: 5px; width: calc(100% - 4px); background-color: #282c34" title="output" id="output"></iframe>
     </main>
 
     <footer style="text-align: center; color: #FFF; padding-top: 10px;">
