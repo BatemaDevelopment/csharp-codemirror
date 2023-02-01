@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     <meta name="description" content="CodeMirror - C#" />
     <meta name="keywords" content="CodeMirror, C#" />
-    <script type="module" src="src/bundles/full.rollup.bundle.js"></script>
+    <link rel="stylesheet" href="styles/dark.css" />
+    <script type="module" src="src/bundles/bundle.mergedScripts.min.js"></script> <!-- Production Script -->
+    <!-- <script type="module" src="src/bundles/bundle.mergedScripts.js"></script> --> <!-- Staging Script -->
     <title>CodeMirror - C#</title>
   </head>
 
-  <body style="background-color: #212122;">
+  <body>
     <main>
-      <div style="border: solid 3px #020200; margin-bottom: 5px; border-radius: 5px;" id="editor"></div>
-      <iframe style="border: solid 3px #020200; border-radius: 5px; width: calc(100% - 4px); background-color: #282c34" title="output" id="output"></iframe>
+      <div id="editor"></div>
+      <iframe title="output" id="output"></iframe>
     </main>
 
-    <footer style="text-align: center; color: #FFF; padding-top: 10px;">
+    <footer>
       Made with ❤️ by BatemaDevelopment!
     </footer>
   </body>

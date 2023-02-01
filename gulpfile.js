@@ -5,7 +5,7 @@ const merge = () =>
   src([
     'dist/*.js'
   ])
-  .pipe(concat('full.bundle.js'))
+  .pipe(concat('mergedScripts.js'))
   .pipe(dest('src/bundles'));
 
 exports.merge = merge;

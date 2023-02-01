@@ -30,10 +30,10 @@
   "scripts": {
     "build": "tsc --build --verbose",
     "merge": "gulp merge",
-    "rollup": "rollup -c",
-    "minify": "babel ./src/bundles/full.rollup.bundle.js --config-file ./babel.config.cjs -o ./src/bundles/full.rollup.bundle.min.js",
-    "package": "npm run build && npm run merge && npm run rollup && npm run minify",
-    "dev": "npm run build && npm run merge && npm run rollup"
+    "bundle": "rollup -c",
+    "minify": "babel ./src/bundles/bundle.mergedScripts.js --config-file ./babel.config.js -o ./src/bundles/bundle.mergedScripts.min.js",
+    "package": "npm run build && npm run merge && npm run bundle && npm run minify",
+    "dev": "npm run build && npm run merge && npm run bundle"
   },
   "repository": {
     "type": "git",

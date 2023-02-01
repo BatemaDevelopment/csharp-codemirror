@@ -1,0 +1,20 @@
+body {
+  background-color: #212122;
+}
+
+body main div#editor {
+  border: solid 3px #020200;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+body main iframe#output {
+  border: 3px solid #020200;
+  border-radius: 5px;
+  width: calc(100% - 4px);
+  background-color: #282c34;
+}
+
+body footer {
+  text-align: center; color: #FFF; padding-top: 10px;
+}

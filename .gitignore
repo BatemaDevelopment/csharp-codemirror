@@ -105,4 +105,5 @@ dist
 
 # User-generated files
 .vscode/settings.json
-src/bundles/*.bundle.js
+src/bundles/mergedScripts.js
+src/bundles/*.mergedScripts.js
