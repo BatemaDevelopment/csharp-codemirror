@@ -23,8 +23,8 @@ const helpPanelState = StateField.define<boolean>({
 
 function createHelpPanel(view: EditorView) {
   const help = `
-    F1: Toggle the help panel
-    Tab: Indent Code
+    F1: Toggle the help panel,
+    Tab: Indent Code,
     Escape: Escape from the "keyboard-trap"
   `;
   let dom = document.createElement('div');
